@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postres </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bebidas</h1>
+        <nav>
+            
+            <a href="#pedido">Hacer Pedido</a>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>Menú</h2>
+        <div class="Bebida">
+            <img src="C:\Users\HP\Desktop\denis.html\Frappé a base de leche con sabor a horchata, la bebida clásica mexicana con un toque más cremoso, topping de crema batida vegetal y chispas de chocolate blanco y oscuro_.jpg" alt="Bebida 1">
+            <p> Horchata   - $2.50 </p>
+        </div>
+        <div class="Bebida">
+            <img src="C:\Users\HP\Desktop\denis.html\FRESA.jpg" alt="Bebida 2">
+            <p> Latte Fresa- $3.40</p>
+        </div>
+            <div class="Bebida">
+                <img src="C:\Users\HP\Desktop\denis.html\CLOUD.jpg" alt="Postre 3">
+                <p>- Latte cloud $4.60</p>
+            </div>
+            <div class="Bebida">
+                <img src="C:\Users\HP\Desktop\denis.html\MORA AZUL.jpg" alt="Bebida 4">
+                <p>Bebida de Mora Azul  - $3.50</p>
+            </div>
+        <!-- Agrega más Postres según necesites -->
+    </section>
+
+    <section id="pedido">
+        <h2>Hacer un Pedido</h2>
+        <form action="pedido.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="Postre">Selecciona tu Postre:</label>
+            <select id="Postre" name="Postre">
+                <option value="Horchata ">Horchata </option>
+                <option value="Latte Fresa">Latte Fresa</option>
+                <option value="Latte cloud">Latte cloud</option>
+                <option value="Bebida de Mora Azul">Bebida de Mora Azul</option>
+            </select>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" min="10" required>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Bebidas Deliciosas</p>
+    </footer>
+</body>
+</html>

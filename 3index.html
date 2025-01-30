@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postres </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Postres</h1>
+        <nav>
+            
+            <a href="#pedido">Hacer Pedido</a>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>Menú</h2>
+        <div class="Postres">
+            <img src="C:\Users\HP\Desktop\denis.html\Serradura de Oreo _ Ruralea.jpg" alt="Postre 1">
+            <p> paquete de Serradura de Oreo - #3.50</p>
+        </div>
+        <div class="Postres">
+            <img src="C:\Users\HP\Desktop\denis.html\13 brochetas de frutas (recetas fáciles y originales) - PequeRecetas.jpg" alt="Postre 2">
+            <p>caja de Brocheta de frutilla y mashmelow - $3.40</p>
+        </div>
+            <div class="Postres">
+                <img src="C:\Users\HP\Desktop\denis.html\Chocolate Covered Strawberries - Cooking Classy.jpg" alt="Postre 3">
+                <p>caja de Frutillas bañada en chocolate - $4.60</p>
+            </div>
+            <div class="Postres">
+                <img src="C:\Users\HP\Desktop\denis.html\Easy Mini Oreo Cheesecake Bites.jpg" alt="Postre 4">
+                <p>caja de Mini Cheesecake  - $5.50</p>
+            </div>
+        <!-- Agrega más Postres según necesites -->
+    </section>
+
+    <section id="pedido">
+        <h2>Hacer un Pedido</h2>
+        <form action="pedido.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="Postre">Selecciona tu Postre:</label>
+            <select id="Postre" name="Postre">
+                <option value="paquete de Serradura de Oreo">paquete de Serradura de Oreo</option>
+                <option value="caja de Brocheta de frutilla y mashmelow">caja de Brocheta de frutilla y mashmelow</option>
+                <option value="caja de Frutillas bañada en chocolate">caja de Frutillas bañada en chocolate</option>
+                <option value="caja de Mini Cheesecake">caja de Mini Cheesecake</option>
+            </select>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" min="10" required>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Postres Deliciosos</p>
+    </footer>
+</body>
+</html>
