@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+</html>
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>K-Band</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ebd9d9;
+            color: #e9d9d9;
+        }
+
+        header {
+            background-color: #eb736e;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background: #c7c0c0;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        .form-container {
+            margin: 2rem auto;
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #fff;
+            max-width: 500px;
+            box-shadow: 0 4px 6px rgba(235, 209, 209, 0.1);
+        }
+        form-container label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-container input,
+        .form-container textarea,
+        .form-container button {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .form-container button {
+            background-color: #b6eeb8;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #e9cfcf;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .gallery img {
+            width: calc(33.33% - 1rem);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(255, 157, 157, 0.2);
+        }
+
+        footer {
+            background: #c5f8c6;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+
+<h2>Forma de Pago</h2>
+<form id="formPago">
+    <label for="nombre"style="color: black;">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required  br>
+
+  
+    <label for="tarjeta"style="color: black;">Número de Tarjeta:</label>
+    <input type="text" id="tarjeta" name="tarjeta" required><br><br>
+
+    <label for="cvv"style="color: black;">CVV:</label>
+    <input type="text" id="cvv" name="cvv" required><br><br>
+
+    <label for="metodo"style="color: black;">Método de Pago:</label>
+    <select id="metodo" name="metodo">
+        <option value="tarjeta">Tarjeta de Crédito</option>
+        <option value="paypal">PayPal</option>
+        <option value="efectivo">Efectivo</option>
+    </select><br><br>
+
+    <button type="submit">Pagar</button>
+</form>
+
+<p id="mensaje" style="display:none; font-weight:bold; color:rgb(204, 121, 236);">¡Gracias por su compra!</p>
+
+<script>
+    document.getElementById("formPago").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evita que se recargue la página
+        document.getElementById("mensaje").style.display = "block";
+    });
+</script>

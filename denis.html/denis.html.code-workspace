@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "pago.html"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "denis.html"
+	}
+}

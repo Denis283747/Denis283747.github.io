@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bocadillos </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bocadillos Deliciosos</h1>
+        <nav>
+            
+            <a href="#pedido">Hacer Pedido</a>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>Menú</h2>
+        <div class="bocadillo">
+            <img src="C:\Users\HP\Desktop\denis.html\imagenes\3faf6dcb-c37c-4278-964e-e22ce2502a0e.jpg" alt="Bocadillo 1">
+            <p>Hamburguesas combo para reuniones - $5.00</p>
+        </div>
+        <div class="bocadillo">
+            <img src="C:\Users\HP\Desktop\denis.html\imagenes\Mini corn dogs (salchicha en masa de maíz).jpg" alt="Bocadillo 2">
+            <p>Corn dogs - $3.50</p>
+        </div>
+            <div class="bocadillo">
+                <img src="C:\Users\HP\Desktop\denis.html\imagenes\Rosemary  Garlic Steak Kebabs.jpg" alt="Bocadillo 3">
+                <p>Broncheta en salsa agridulce - $4.50</p>
+            </div>
+            <div class="bocadillo">
+                <img src="C:\Users\HP\Desktop\denis.html\imagenes\6c033bb4-0efd-463a-99c6-1de353b39c9d.jpg" alt="Bocadillo 4">
+                <p>Bandeja de bocadillos - $5.50</p>
+            </div>
+        <!-- Agrega más bocadillos según necesites -->
+    </section>
+
+    <section id="pedido">
+        <h2>Hacer un Pedido</h2>
+        <form action="pedido.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="bocadillo">Selecciona tu bocadillo:</label>
+            <select id="bocadillo" name="bocadillo">
+                <option value="Hamburquesas">Hamburguesas combo para reuniones</option>
+                <option value="Corn dogs">Corn dogs</option>
+                <option value="Broncheta en salsa agridulce">Broncheta en salsa agridulce</option>
+                <option value="Bandeja de bocadillos">Bandeja de bocadillos</option>
+            </select>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" min="10" require
+
+            
+            <form action="pago.html" method="GET">
+                <button type="submit">Ir a Pagar</button>
+                
+            </form>
+            
+            
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Bocadillos Deliciosos</p>
+    </footer>
+</body>
+</html>
